@@ -1,4 +1,3 @@
-# Read the entire file into a variable called 'data'
 with open(r"C:\Users\dell\Downloads\input_1.txt", "r") as file:
     data = file.read()
 print(data)
@@ -10,13 +9,5 @@ removed_punctuation = data.translate(str.maketrans('', '', string.punctuation))
 print(removed_punctuation)
 
 # Removinng whitespaces \n \t \s
-removed_whitespaces = " ".join(removed_punctuation.split())
+removed_whitespaces = " ".join(data.split())
 print(removed_whitespaces)
-
-# Lowering the data
-lowered_data = removed_punctuation.lower()
-print(lowered_data)
-
-# Tokenization
-tokenized_data = data.split()
-print(tokenized_data)
