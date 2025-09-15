@@ -1,5 +1,5 @@
 # Read the entire file into a variable called 'data'
-with open(r"C:\Users\dell\Downloads\input_1.txt", "r") as file:
+with open(r"input.txt", "r") as file:
     data = file.read()
 print(data)
 
@@ -32,7 +32,7 @@ output = (
     f"Unique words: {unique_words}\n"
     f"Characters (with spaces): {len(normalization)}\n"
     f"Characters (no spaces): {len(removed_punctuation.replace(' ',''))}\n"
-    f"Average word length: {avg_word_length:.2f}\n"
+    f"Average word length: {avg_word_length:.1f}\n"
     f"Most common word(s): {most_common} ({count})\n"
 )
 
